@@ -14,7 +14,7 @@
     margin: 0;
 }
 
-input {
+#btnSize {
     border: 1px solid #E8E6EA;
     box-sizing: border-box;
     border-radius: 15px;
@@ -24,12 +24,13 @@ input {
     top: 642px;
     
 
-    color: #6A6A6A;
+    color: #E8E6EA;
     font-family: Helvetica;
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
 }
+
 
 .button {
     color: white;

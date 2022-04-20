@@ -31,6 +31,8 @@ function App() {
     setUser({name: "", email: ""})
   }
 
+  
+
   return (
     <div className="App">
       {(user.email != "") ? (

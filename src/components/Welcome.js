@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
 
+function click() {
+    console.log('click')
+}
+
 function Welcome({ Login, error }) {
 
     const [details, setDetails] = useState({ name: "", email: "", password: "" })
@@ -10,10 +14,10 @@ function Welcome({ Login, error }) {
         Login(details);
     }
 
+    
+
     return (
-        <form onSubmit={submitHandler} className="welcome-page">
             <div>
-                {(error != "") ? (<div className="error">{error}</div>) : ""}
                 <h1>Välkommen till Truly</h1>
 
                 <div>
@@ -23,10 +27,9 @@ function Welcome({ Login, error }) {
                         Testet tar ca 5 min att göra.
                     </p>
                 </div>
-                <input class="button" type="submit" value="Gör testet"></input>
-
+                <a href=''></a>
+                <button id="btnSize" class="button" onClick={click} >Gör testet</button>
             </div>
-        </form>
     )
 }
 

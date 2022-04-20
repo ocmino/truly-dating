@@ -21,13 +21,13 @@ function LoginForm({ Login, error }) {
                 </div> */}
                 <div class="form-group">
                     <label htmlFor="email"></label>             
-                    <input type="email" name="email " id="email" placeholder="E-post" onChange={e => setDetails({...details, email: e.target.value})}  value={details.email}></input>  
+                    <input type="email" name="email" id="btnSize" style={{color: '#6A6A6A'}} placeholder="E-post" onChange={e => setDetails({...details, email: e.target.value})}  value={details.email}></input>  
                 </div>
                 <div class="form-group">
                   <label htmlFor="password"></label>
-                  <input type="password" name="password" id="password" placeholder="Lösenord" onChange={e => setDetails({...details, password: e.target.value})}  value={details.password}></input>
+                  <input type="password" name="password" id="btnSize" style={{color: '#6A6A6A'}} placeholder="Lösenord" onChange={e => setDetails({...details, password: e.target.value})}  value={details.password}></input>
                 </div>
-                <input class="button" type="submit" value="Logga in"></input>
+                <input id="btnSize" className="button" type="submit" value="Logga in"></input>
             </div>
         </form>
     )
